@@ -41,7 +41,6 @@ function show(){
     document.addEventListener('keypress', function() {
       if (document.querySelector('input').value === currentSong.name){
         score++
-        songs.splice(i, 1)
         console.log(songs)
         show()
       }

@@ -1,2 +1,2 @@
 # QuickZik
-A musical blind test 
+A musical blind test created by Simtaxx
