@@ -6,14 +6,14 @@ class song {
     this.link = link
     this.song = function play_song() {
       main.innerHTML = `<ul><li><img src="${this.picture}" alt="${this.picture}"</li>
-      <audio controls>
+      <audio controls autoplay>
       <source src="${this.link}" type="audio/mp3" />
-      </audio></ul>
+      </audio>
       <form>
       Enter the name of this song:<br>
       <input type="text" name="songName"><br>
       <input type="submit">
-      </form>
+      </form></ul>
       <h2>votre score: ${score}</h2>`
     }
   }
@@ -41,6 +41,8 @@ function show(){
     document.addEventListener('keypress', function() {
       if (document.querySelector('input').value === currentSong.name){
         score++
+        songs.splice(i, 1)
+        console.log(songs)
         show()
       }
     })
