@@ -4,6 +4,9 @@ body {
 h1 {
   text-align: center;
 }
+h2 {
+  text-align: center;
+}
 main {
   display: flex;
   flex-direction: column-reverse;
@@ -19,4 +22,10 @@ li {
 img {
   width: 400px;
   height: 250px;
+}
+.visible {
+  opacity: 1;
+}
+.invisible {
+  opacity: 0;
 }
