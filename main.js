@@ -90,7 +90,6 @@ let countEnter = 0;
 document.querySelector("html").addEventListener("keypress", event => {
   if (event.keyCode === 13) {
     if (countEnter === 0) {
-      console.log("ouai");
       countEnter++;
       show();
       selector("h2", "ul", "h3", `#time`);
@@ -110,3 +109,4 @@ document.querySelector("html").addEventListener("keypress", event => {
     }
   }
 });
+console.log(countEnter);
