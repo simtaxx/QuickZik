@@ -25,7 +25,7 @@ class song {
 }
 
 let score = 0;
-let temps = 20;
+let temps = 60;
 
 // Somes objects
 
