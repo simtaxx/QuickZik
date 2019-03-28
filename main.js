@@ -11,21 +11,26 @@ class song {
       main.innerHTML = `<ul class="invisible"><li><img src="${
         this.picture
       }" alt="${this.picture}"</li>
-      <audio controls autoplay>
+      <audio controls>
       <source src="${this.link}" type="audio/mp3" />
       </audio>
       <form>
       Enter the name of this song:<br>
-      <input type="text" name="songName">
+      <input id="songname" type="text" name="songName" onkeypress="notEnter(event)"autofocus>
       </form></ul>
       <h3 class="invisible">votre score: ${score}</h2>
       <h3 class="invisible" id='time'>temps restant: ${temps}</h2>`;
     };
   }
 }
-
+function notEnter(event) {
+  if (event.which == 13) {
+    event.preventDefault();
+    event.stopPropagation();
+  }
+}
 let score = 0;
-let temps = 60;
+let temps = 5;
 
 // Somes objects
 
@@ -109,4 +114,3 @@ document.querySelector("html").addEventListener("keypress", event => {
     }
   }
 });
-console.log(countEnter);
