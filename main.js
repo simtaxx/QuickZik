@@ -105,9 +105,6 @@ document.querySelector("html").addEventListener("keypress", event => {
             document.querySelector(
               "#time"
             ).innerText = `temps restant: ${temps}`;
-            if (temps === 0) {
-              console.log(temps);
-            }
           }
         }, 1000);
       }
